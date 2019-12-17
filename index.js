@@ -14,4 +14,6 @@ client.on("message", message =>{
     if (!message.guild) return
     if (message.content === prefix + "hello")
     message.channel.send("Bonjour, comment vas-tu" + message.author + "?")   
-})
+});
+
+bot.login(process.env.BOT_TOKEN)
